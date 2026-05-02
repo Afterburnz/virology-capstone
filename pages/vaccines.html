@@ -1,27 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaccine Effectiveness</title>
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaccines</title>
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
-<body>
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="basics.html">Basics</a>
-        <a href="dashboard.html">Global Data</a>
-        <a href="vaccines.html">Vaccines</a>
-        <a href="infection.html">Infection</a>
-        <a href="research.html">Research</a>
-        <a href="references.html">References</a>
-    </nav>
-    <main>
-        <section class="hero">     
-            <h1>Vaccine Effectiveness</h1>
-            <p>Placeholder</p>
-        </section>       
-    </main>
 
+<body>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="basics.html">Basics</a>
+    <a href="dashboard.html">Global Data</a>
+    <a href="vaccines.html" class="active">Vaccines</a>
+    <a href="infection.html">Infection</a>
+    <a href="research.html">Research</a>
+    <a href="references.html">References</a>
+  </nav>
+
+<main>
+  <header class="page-hero">
+    <h1>Vaccines</h1>
+    <p class="hero-subtitle">
+      This page explains how vaccines work, the main vaccine types, and how effectiveness is measured.
+    </p>
+  </header>
+
+    <div class="section-card">
+    <h2>Key Takeaways</h2>
+    <ul class="styled-list">
+      <li>Vaccines train the immune system to recognize pathogens without causing the full disease</li>
+      <li>Immune memory (B cells and T cells) allows the body to respond faster and reduce severe illness</li>
+      <li>Different vaccine types (mRNA, viral vector, subunit, inactivated, live-attenuated) use different methods to trigger immunity</li>
+      <li>Vaccines undergo rigorous testing to ensure safety and effectiveness before and after approval</li>
+      <li>Vaccine effectiveness may decrease over time or with new variants, but protection against severe disease remains strong</li>
+    </ul>
+  </div>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">What is a Vaccine?</h2>
+    <div class="collapsible-content open">
+      <p>
+        A vaccine is a medical tool that helps the immune system recognize and respond to a pathogen (like a virus)
+        without causing the full disease. This prepares the body to fight the real infection faster in the future.
+        <a href="references.html#ref-7" class="citation">[7]</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">How Vaccines Work</h2>
+    <div class="collapsible-content open">
+      <p>
+        Vaccines introduce antigens (or instructions to make antigens) so the immune system learns what to attack.
+        After vaccination, the body creates immune memory through B cells (antibodies) and T cells (cell defense).
+        <a href="references.html#ref-8" class="citation">[8]</a>
+      </p>
+
+      <figure class="figure">
+        <img src="../images/vaccination.webp" alt="Diagram of how vaccines work" class="classification-image">
+        <figcaption class="image-caption">
+          Source: <em>How do vaccines work?</em>, World Health Organization
+        </figcaption>
+      </figure>
+
+      <h3 class="collapsible-title open">🧠 Immune Memory</h3>
+      <div class="collapsible-content open">
+        <p>
+          Memory B cells and memory T cells remain in the body after the initial response. If the virus appears later,
+          these memory cells respond quickly—often stopping severe illness before it develops.
+          <a href="references.html#ref-8" class="citation">[8]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🛡️ Antibodies vs T Cells</h3>
+      <div class="collapsible-content open">
+        <p>
+          Antibodies bind to viruses and can block them from entering cells. T cells help coordinate the immune response,
+          and some T cells destroy infected cells to limit viral replication.
+          <a href="references.html#ref-9" class="citation">[9]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Types of Vaccines</h2>
+    <div class="collapsible-content open">
+      <p>
+        Different vaccine platforms deliver antigens in different ways. Each type has strengths and limitations
+        depending on the virus and the population being vaccinated.
+        <a href="references.html#ref-10" class="citation">[10]</a>
+      </p>
+
+      <h3 class="collapsible-title open">💉 mRNA Vaccines</h3>
+      <div class="collapsible-content open">
+        <p>
+          mRNA vaccines provide genetic instructions that tell cells to make a harmless viral protein (an antigen). The
+          immune system then builds a response to that antigen.
+          <a href="references.html#ref-11" class="citation">[10]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🧬 Viral Vector Vaccines</h3>
+      <div class="collapsible-content open">
+        <p>
+          Viral vector vaccines use a harmless virus (the vector) to deliver genetic material for a viral antigen into
+          cells, triggering an immune response.
+          <a href="references.html#ref-10" class="citation">[10]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🧪 Protein Subunit Vaccines</h3>
+      <div class="collapsible-content open">
+        <p>
+          Protein subunit vaccines contain purified pieces of the virus (often proteins). Because they do not contain the
+          whole virus, they often require adjuvants or multiple doses to strengthen immunity.
+          <a href="references.html#ref-11" class="citation">[11]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🦠 Inactivated Vaccines</h3>
+      <div class="collapsible-content open">
+        <p>
+          Inactivated vaccines contain virus particles that have been killed so they cannot replicate. They still expose
+          the immune system to viral antigens.
+          <a href="references.html#ref-10" class="citation">[10]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🧫 Live-Attenuated Vaccines</h3>
+      <div class="collapsible-content open">
+        <p>
+          Live-attenuated vaccines use a weakened form of the virus that can replicate a little without causing serious
+          disease in healthy people. This often produces strong, long-lasting immunity.
+          <a href="references.html#ref-10" class="citation">[10]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">Comparison of Vaccine Types</h3>
+      <div class="collapsible-content open">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Vaccine Type</th>
+              <th>What It Contains</th>
+              <th>Main Advantage</th>
+              <th>Limitation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>mRNA</td>
+              <td>mRNA instructions to make a viral protein</td>
+              <td>Fast to design and update</td>
+              <td>Requires cold storage</td>
+            </tr>
+            <tr>
+              <td>Viral Vector</td>
+              <td>Harmless virus carrying antigen genes</td>
+              <td>Strong immune response</td>
+              <td>Pre-existing immunity to vector</td>
+            </tr>
+            <tr>
+              <td>Protein Subunit</td>
+              <td>Purified viral proteins</td>
+              <td>Cannot replicate or cause disease</td>
+              <td>May require boosters or adjuvants</td>
+            </tr>
+            <tr>
+              <td>Inactivated</td>
+              <td>Killed virus particles</td>
+              <td>Stable and well-established method</td>
+              <td>Weaker immune response</td>
+            </tr>
+            <tr>
+              <td>Live-Attenuated</td>
+              <td>Weakened live virus</td>
+              <td>Long-lasting immunity</td>
+              <td>Not suitable for immunocompromised individuals</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="image-caption">
+          Comparison adapted from standard immunology and virology sources.
+          <a href="references.html#ref-10">[10]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Vaccine Development and Testing</h2>
+    <div class="collapsible-content open">
+      <p>
+        Vaccines go through multiple stages of testing to evaluate safety, dosage, and effectiveness before approval.
+        Even after approval, monitoring systems track side effects and long-term performance.
+        <a href="references.html#ref-12" class="citation">[12]</a>
+      </p>
+
+      <h3 class="collapsible-title open">🧪 Preclinical</h3>
+      <div class="collapsible-content open">
+        <p>
+          Early lab and animal studies help determine whether a vaccine candidate produces an immune response and appears
+          safe enough to test in humans.
+          <a href="references.html#ref-12" class="citation">[12]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">👥 Clinical Trials (Phase I–III)</h3>
+      <div class="collapsible-content open">
+        <p>
+          Phase I trials focus on safety in a small group. Phase II expands testing for dosage and immune response. Phase
+          III measures how well the vaccine prevents disease in large populations.
+          <a href="references.html#ref-12" class="citation">[12]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">✅ Approval & Monitoring</h3>
+      <div class="collapsible-content open">
+        <p>
+          Regulatory agencies review trial results before approval. After rollout, ongoing surveillance detects rare side
+          effects and tracks real-world effectiveness.
+          <a href="references.html#ref-12" class="citation">[12]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Understanding Vaccine Effectiveness</h2>
+    <div class="collapsible-content open">
+      <p>
+        Vaccine effectiveness describes how well a vaccine reduces a specific outcome (infection, hospitalization, or
+        death) in real-world conditions. Effectiveness can change over time due to waning immunity and viral evolution.
+        <a href="references.html#ref-13" class="citation">[13]</a>
+      </p>
+
+      <h3 class="collapsible-title open">📉 Why Effectiveness Changes</h3>
+      <div class="collapsible-content open">
+        <p>
+          Immunity may decrease over time, and viruses can mutate into new variants that partially evade immune
+          recognition. Booster doses can restore protection by strengthening immune memory.
+          <a href="references.html#ref-13" class="citation">[13]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">📌 Key Point</h3>
+      <div class="collapsible-content open">
+        <p>
+          Even when protection against infection drops, vaccines often continue to provide strong protection against
+          severe disease and death.
+          <a href="references.html#ref-13" class="citation">[13]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">🌍 Why Vaccines Matter</h2>
+    <div class="collapsible-content open">
+      <p>
+        Vaccination reduces the spread and severity of viral diseases, protecting both individuals and communities.
+        High vaccination coverage can limit outbreaks and reduce pressure on healthcare systems.
+        <a href="references.html#ref-14" class="citation">[14]</a>
+      </p>
+
+      <h3 class="collapsible-title open">🛡️ Community Protection</h3>
+      <div class="collapsible-content open">
+        <p>
+          When many people are immune, viruses have fewer opportunities to spread, indirectly protecting individuals who cannot be vaccinated.
+          <a href="references.html#ref-14" class="citation">[14]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Common Misconceptions</h2>
+    <div class="collapsible-content open">
+      <h3 class="collapsible-title open">Myth: “Vaccines are 100% effective.”</h3>
+      <div class="collapsible-content open">
+        <p>
+          No vaccine provides perfect protection. The main public health goal is reducing severe illness, hospitalization,
+          and death.
+          <a href="references.html#ref-15" class="citation">[15]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">Why do some people still get infected after vaccination?</h3>
+      <div class="collapsible-content open">
+        <p>
+          Breakthrough infections can occur, especially when a virus evolves or immunity wanes. However, vaccinated people
+          are usually less likely to experience severe outcomes.
+          <a href="references.html#ref-15" class="citation">[15]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+    <footer class="footer">
+      <p>Modern Virology Project</p>
+      <p class="footer-sub">Exploring viruses through data, biology, and research</p>
+  </footer>
+  <script src="../js/script.js"></script>
 </body>
 </html>

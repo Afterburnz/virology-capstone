@@ -1,27 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recent Research</title>
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research</title>
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
-<body>
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="basics.html">Basics</a>
-        <a href="dashboard.html">Global Data</a>
-        <a href="vaccines.html">Vaccines</a>
-        <a href="infection.html">Infection</a>
-        <a href="research.html">Research</a>
-        <a href="references.html">References</a>
-    </nav>
-    <main>
-        <section class="hero">     
-            <h1>Recent Research</h1>
-            <p>Placeholder</p>
-        </section>       
-    </main>
 
+<body>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="basics.html">Basics</a>
+    <a href="dashboard.html">Global Data</a>
+    <a href="vaccines.html">Vaccines</a>
+    <a href="infection.html">Infection</a>
+    <a href="research.html" class="active">Research</a>
+    <a href="references.html">References</a>
+  </nav>
+
+<main>
+  <header class="page-hero">
+    <h1>Recent Research</h1>
+    <p class="hero-subtitle">
+      This page highlights recent scientific studies in virology and explains how modern tools track viral evolution in real time.
+    </p>
+  </header>
+
+    <div class="section-card">
+    <h2>Key Takeaways</h2>
+    <ul class="styled-list">
+      <li>Modern virology research focuses on tracking how viruses evolve, spread, and adapt in real time</li>
+      <li>Techniques like genome sequencing and wastewater surveillance allow early detection of new variants</li>
+      <li>Phylogenetic analysis helps scientists understand relationships between viral strains and track transmission patterns</li>
+      <li>Different technologies (NGS, long-read sequencing, CRISPR diagnostics) each play a role in monitoring and controlling outbreaks</li>
+      <li>Surveillance data has limitations, so scientists combine multiple methods to build a more complete picture of viral spread</li>
+    </ul>
+  </div>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Why “Recent Research” Matters</h2>
+    <div class="collapsible-content open">
+      <p>
+        Virology changes fast: viruses mutate, recombine, and sometimes jump between species. Modern research focuses on 
+        understanding how viruses evolve and spread, and developing tools that detect changes early so public health responses can adapt.
+        <a href="references.html#ref-31" class="citation">[31]</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Highlights from Recent Studies</h2>
+    <div class="collapsible-content open">
+      <p>
+        Below are examples of the kinds of studies scientists publish to track new variants, understand evolution, and improve surveillance.
+        These will be written as short summaries.
+      </p>
+
+      <h3 class="collapsible-title open">🧫 Study 1: Wastewater sequencing can detect emerging variants early</h3>
+      <div class="collapsible-content open">
+        <p>
+          Researchers sequenced thousands of wastewater samples and used computational methods to spot patterns of mutations over time.
+          A major advantage of wastewater is that it captures signals from many infected people at once, including cases that never get tested.
+          <a href="references.html#ref-27" class="citation">[27]</a>
+        </p>
+
+        <figure class="figure">
+          <img
+            src="../images/wastewater-surveillance.png"
+            alt="Illustration of wastewater sampling feeding into sequencing and variant tracking"
+            class="classification-image"
+          >
+          <figcaption class="image-caption">
+            Source: <em>Wastewater sequencing reveals community and variant dynamics of the collective human virome</em>, nature communications
+          </figcaption>
+        </figure>
+      </div>
+
+      <h3 class="collapsible-title open">🧬 Study 2: Long-read sequencing helps reconstruct full viral genomes in mixed samples</h3>
+      <div class="collapsible-content open">
+        <p>
+          Some samples contain multiple viruses or multiple closely related viral lineages. Long-read approaches can help assemble longer genome segments,
+          which can make it easier to detect recombination events and correctly rebuild genomes from complex mixtures.
+          <a href="references.html#ref-28" class="citation">[28]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🦠 Study 3: Avian influenza evolves through reassortment (gene segment “mixing”)</h3>
+      <div class="collapsible-content open">
+        <p>
+          Influenza viruses have segmented genomes, so if two strains infect the same host, they can swap segments (reassortment).
+          Surveillance studies document reassortment events and track how new combinations spread—important for monitoring spillover risk.
+          <a href="references.html#ref-29" class="citation">[29]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🧪 Study 4: CRISPR-based diagnostics are expanding rapid viral detection</h3>
+      <div class="collapsible-content open">
+        <p>
+          CRISPR systems can be engineered to recognize specific viral genetic sequences. Reviews of CRISPR diagnostics describe platforms and clinical
+          translation challenges (accuracy, sample prep, scaling, and regulation), but the overall trend is toward faster and more portable testing.
+          <a href="references.html#ref-30" class="citation">[30]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">How Scientists Track Viral Evolution</h2>
+    <div class="collapsible-content open">
+      <p>
+        Viral evolution is tracked by comparing genomes over time. Scientists look for mutations, recombination, and selection patterns, then connect
+        those changes to transmission, immune escape, or host adaptation.
+        <a href="references.html#ref-31" class="citation">[31]</a>
+      </p>
+
+      <h3 class="collapsible-title open">🌳 Phylogenetic Trees</h3>
+      <div class="collapsible-content open">
+        <p>
+          A phylogenetic tree is like a “family tree” built from genetic differences. Closely related samples cluster together, helping researchers
+          infer transmission links, outbreak origins, and how lineages diversify.
+          <a href="references.html#ref-31" class="citation">[31]</a>
+        </p>
+
+        <figure class="figure">
+          <img
+            src="../images/phylogenetic-tree.png"
+            alt="Example of a phylogenetic tree showing viral lineages branching over time"
+            class="classification-image"
+          >
+          <figcaption class="image-caption">
+            Source: <em>The phylogenomics of evolving virus virulence</em>, nature reviews genetics
+          </figcaption>
+        </figure>
+      </div>
+
+      <h3 class="collapsible-title open">📈 Phylodynamics</h3>
+      <div class="collapsible-content open">
+        <p>
+          Phylodynamics combines evolution + epidemiology. Instead of only asking “which variants exist?”, it asks
+          “how fast are they spreading?” and “what does the genome data suggest about population-level transmission?”
+          <a href="references.html#ref-31" class="citation">[31]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Modern Techniques Used Today</h2>
+    <div class="collapsible-content open">
+      <p>
+        Modern surveillance often combines multiple tools (clinical sequencing + environmental sampling + modeling). Each method has strengths and limitations.
+        <a href="references.html#ref-27" class="citation">[27]</a>
+      </p>
+
+      <h3 class="collapsible-title open">🧪 Next-Generation Sequencing (NGS)</h3>
+      <div class="collapsible-content open">
+        <p>
+          NGS reads viral genomes at scale. This allows researchers to track lineages, identify mutations linked to immune escape, and monitor spread across regions.
+          <a href="references.html#ref-31" class="citation">[31]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🚰 Wastewater Genomic Surveillance</h3>
+      <div class="collapsible-content open">
+        <p>
+          Wastewater can give an early warning signal at the community level—especially when clinical testing is limited. Sequencing wastewater can track variant
+          turnover and detect novel mutation patterns.
+          <a href="references.html#ref-27" class="citation">[27]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🧵 Long-Read Sequencing</h3>
+      <div class="collapsible-content open">
+        <p>
+          Long-read sequencing (often associated with nanopore or similar approaches) can help reconstruct longer genome segments and can be useful when samples
+          are mixed or when detecting recombination is important.
+          <a href="references.html#ref-28" class="citation">[28]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🔬 Genomic “Mixing” in Segmented Viruses (Reassortment)</h3>
+      <div class="collapsible-content open">
+        <p>
+          For segmented viruses like influenza, reassortment is a key evolutionary mechanism. Surveillance studies watch for new gene segment combinations that
+          could affect host range or transmissibility.
+          <a href="references.html#ref-29" class="citation">[29]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">⚡ Rapid Molecular Diagnostics (Including CRISPR)</h3>
+      <div class="collapsible-content open">
+        <p>
+          Faster testing supports faster containment. CRISPR diagnostics aim for speed and portability, but still face real-world constraints like sample handling,
+          sensitivity, and validation.
+          <a href="references.html#ref-30" class="citation">[30]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">Tools at a Glance</h3>
+      <div class="collapsible-content open">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Technique</th>
+              <th>What It Does</th>
+              <th>Best For</th>
+              <th>Limitation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Clinical WGS (NGS)</td>
+              <td>Sequences viral genomes from patient samples</td>
+              <td>Tracking variants and outbreaks</td>
+              <td>Biased toward who gets tested</td>
+            </tr>
+            <tr>
+              <td>Wastewater sequencing</td>
+              <td>Detects viral signals from communities</td>
+              <td>Early warning + broader coverage</td>
+              <td>Harder to assign to individuals</td>
+            </tr>
+            <tr>
+              <td>Long-read sequencing</td>
+              <td>Reads longer genome fragments</td>
+              <td>Mixed samples, recombination analysis</td>
+              <td>Can be cost/quality dependent</td>
+            </tr>
+            <tr>
+              <td>Phylogenetics</td>
+              <td>Builds evolutionary trees from genomes</td>
+              <td>Transmission relationships, lineage history</td>
+              <td>Depends on sampling density</td>
+            </tr>
+            <tr>
+              <td>Phylodynamics</td>
+              <td>Links evolution to spread over time</td>
+              <td>Estimating growth/decline of lineages</td>
+              <td>Model assumptions affect results</td>
+            </tr>
+            <tr>
+              <td>CRISPR diagnostics</td>
+              <td>Detects specific genetic targets quickly</td>
+              <td>Rapid detection, portable testing</td>
+              <td>Validation + sample prep challenges</td>
+            </tr>
+            <tr>
+              <td>Influenza reassortment analysis</td>
+              <td>Tracks segment swapping between strains</td>
+              <td>Monitoring spillover/pandemic risk</td>
+              <td>Requires strong surveillance networks</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="image-caption">
+          Summary of common modern virology techniques used for surveillance and evolutionary tracking.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Common Misconceptions</h2>
+    <div class="collapsible-content open">
+      <h3 class="collapsible-title open">Myth: “A new variant always means the virus is more dangerous.”</h3>
+      <div class="collapsible-content open">
+        <p>
+          Not necessarily. Many mutations do nothing, and “fitness” can mean different things (spreading faster vs. causing more severe disease).
+          Scientists rely on multiple data sources—lab experiments, epidemiology, and genomics—before concluding what a variant changes.
+          <a href="references.html#ref-31" class="citation">[31]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">Myth: “Genomic surveillance sees everything.”</h3>
+      <div class="collapsible-content open">
+        <p>
+          Surveillance depends on sampling. If sequencing drops, or if certain regions don’t sample much, lineages can spread “under the radar.”
+          That’s one reason environmental monitoring (like wastewater) can be a strong complement to clinical sequencing.
+          <a href="references.html#ref-27" class="citation">[27]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+    <footer class="footer">
+      <p>Modern Virology Project</p>
+      <p class="footer-sub">Exploring viruses through data, biology, and research</p>
+  </footer>
+  <script src="../js/script.js"></script>
 </body>
 </html>

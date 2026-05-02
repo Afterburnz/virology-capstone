@@ -1,27 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mechanisms of Infection</title>
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infection</title>
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
-<body>
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="basics.html">Basics</a>
-        <a href="dashboard.html">Global Data</a>
-        <a href="vaccines.html">Vaccines</a>
-        <a href="infection.html">Infection</a>
-        <a href="research.html">Research</a>
-        <a href="references.html">References</a>
-    </nav>
-    <main>
-        <section class="hero">     
-            <h1>Mechanisms of Infection</h1>
-            <p>Placeholder</p>
-        </section>       
-    </main>
 
+<body>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="basics.html">Basics</a>
+    <a href="dashboard.html">Global Data</a>
+    <a href="vaccines.html">Vaccines</a>
+    <a href="infection.html" class="active">Infection</a>
+    <a href="research.html">Research</a>
+    <a href="references.html">References</a>
+  </nav>
+
+<main>
+  <header class="page-hero">
+    <h1>Mechanisms of Infection</h1>
+    <p class="hero-subtitle">
+      This page explains how viruses enter the body, infect cells, replicate, spread, and cause symptoms.
+    </p>
+  </header>
+
+    <div class="section-card">
+    <h2>Key Takeaways</h2>
+    <ul class="styled-list">
+      <li>Viral infections occur when viruses enter the body, infect host cells, and begin replicating</li>
+      <li>The infection process follows key stages: entry, attachment, replication, and release</li>
+      <li>Viruses rely on host cell machinery to reproduce, effectively turning cells into “virus factories”</li>
+      <li>Symptoms can result from both direct cell damage and the body’s immune response</li>
+      <li>Viruses can evolve and evade immune defenses, affecting spread, severity, and reinfection risk</li>
+    </ul>
+  </div>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">What is an Infection?</h2>
+    <div class="collapsible-content open">
+      <p>
+        An infection happens when a pathogen (such as a virus) enters the body, successfully infects cells, and begins
+        replicating. Infection does not always lead to serious disease, but it can trigger symptoms and immune
+        responses depending on the virus and the host.
+        <a href="references.html#ref-16" class="citation">[16]</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">How Viral Infections Start</h2>
+    <div class="collapsible-content open">
+      <p>
+        Viruses cannot reproduce on their own. To replicate, they must enter living cells and use the host cell’s
+        machinery to make new viral particles. This infection process occurs in stages, and each stage is a possible
+        target for immune defenses or antiviral treatments.
+        <a href="references.html#ref-17" class="citation">[17]</a>
+      </p>
+
+      <h3 class="collapsible-title open">📍 Entry into the Body</h3>
+      <div class="collapsible-content open">
+        <p>
+          Viruses usually enter through specific routes such as the respiratory tract, digestive tract, broken skin, or
+          mucous membranes. The route of entry often influences which tissues are infected first and how the disease
+          spreads through the body.
+          <a href="references.html#ref-16" class="citation">[16]</a>
+        </p>
+
+        <figure class="figure">
+          <img
+            src="../images/virus-entry.jpg"
+            alt="Diagram showing common routes of viral entry into the human body"
+            class="classification-image"
+          >
+          <figcaption class="image-caption">
+            Source: <em>Viruses and the respiratory tract</em>, Virology Blog
+          </figcaption>
+        </figure>
+      </div>
+
+      <h3 class="collapsible-title open">🔑 Attachment (Receptor Binding)</h3>
+      <div class="collapsible-content open">
+        <p>
+          To infect a cell, a virus must attach to it. Viral surface proteins bind to specific receptors on the host cell.
+          This “lock-and-key” matching helps explain why some viruses infect certain species (host range) or certain
+          tissues (tropism).
+          <a href="references.html#ref-16" class="citation">[16]</a>
+        </p>
+
+        <figure class="figure">
+          <img
+            src="../images/receptor-binding.jpg"
+            alt="Diagram showing a virus attaching to specific receptors on a host cell"
+            class="classification-image"
+          >
+          <figcaption class="image-caption">
+            Source: <em>Viral attachment to host cell</em>, ViralZone
+          </figcaption>
+        </figure>
+      </div>
+
+      <h3 class="collapsible-title open">🚪 Entry into the Cell</h3>
+      <div class="collapsible-content open">
+        <p>
+          After attachment, viruses enter cells through processes like membrane fusion (common for enveloped viruses) or
+          endocytosis, where the cell pulls the virus inside in a vesicle. The goal is to deliver the viral genetic
+          material into the cell.
+          <a href="references.html#ref-16" class="citation">[16]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">📦 Uncoating</h3>
+      <div class="collapsible-content open">
+        <p>
+          Uncoating is when the viral capsid breaks apart and releases the viral genome (RNA or DNA) into the cell. Once
+          the genome is free, the virus can begin making viral proteins and copying its genetic material.
+          <a href="references.html#ref-16" class="citation">[16]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Replication Inside Cells</h2>
+    <div class="collapsible-content open">
+      <p>
+        Once inside, the virus turns the cell into a “virus factory.” The cell’s ribosomes, enzymes, and energy are
+        redirected to make viral proteins and copy the viral genome. The details vary depending on whether the virus is
+        DNA- or RNA-based, but the overall goal is to build many new viruses.
+        <a href="references.html#ref-18" class="citation">[18]</a>
+      </p>
+
+      <figure class="figure">
+        <img
+          src="../images/virus-replication.jpg"
+          alt="Diagram of a general viral replication cycle inside a host cell"
+          class="classification-image"
+        >
+        <figcaption class="image-caption">
+          Source: <em>Virus replication</em>, British Society for Immunology
+        </figcaption>
+      </figure>
+
+      <h3 class="collapsible-title open">🧬 Viral Gene Expression</h3>
+      <div class="collapsible-content open">
+        <p>
+          Viral genes are used to produce proteins needed for replication, immune evasion, and building new virus
+          particles. Some viruses replicate in the nucleus, while many RNA viruses replicate in the cytoplasm.
+          <a href="references.html#ref-18" class="citation">[18]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🧪 Mutation and Evolution</h3>
+      <div class="collapsible-content open">
+        <p>
+          Many viruses, especially RNA viruses, accumulate mutations because their replication enzymes can be prone to errors.
+          Mutations can sometimes help a virus spread faster, resist immune defenses, or change how severe the disease is.
+          <a href="references.html#ref-18" class="citation">[18]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Assembly and Release</h2>
+    <div class="collapsible-content open">
+      <p>
+        After enough viral components are produced, new virus particles are assembled. They then leave the cell to
+        infect additional cells. The release method can affect how much damage occurs and how strongly the immune system
+        reacts.
+        <a href="references.html#ref-19" class="citation">[19]</a>
+      </p>
+
+      <figure class="figure">
+        <img
+          src="../images/virus-release.jpg"
+          alt="Diagram comparing viral release by budding versus cell lysis"
+          class="classification-image"
+        >
+        <figcaption class="image-caption">
+          Source: <em>Virus Release - an overview</em>, ScienceDirect Topics
+        </figcaption>
+      </figure>
+
+      <h3 class="collapsible-title open">💥 Cell Lysis</h3>
+      <div class="collapsible-content open">
+        <p>
+          Some viruses rupture (lyse) the host cell to escape, which kills the cell. This can cause tissue damage and
+          inflammation, contributing to symptoms.
+          <a href="references.html#ref-20" class="citation">[20]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🫧 Budding</h3>
+      <div class="collapsible-content open">
+        <p>
+          Enveloped viruses often leave the cell by budding, taking part of the host cell membrane as their envelope.
+          Budding may allow the cell to survive for a while, but it can still disrupt normal cell function.
+          <a href="references.html#ref-19" class="citation">[19]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">Key Stages of Viral Infection</h3>
+      <div class="collapsible-content open">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Stage</th>
+              <th>What Happens</th>
+              <th>Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Entry</td>
+              <td>Virus enters the host through specific routes</td>
+              <td>Determines exposure and initial site of infection</td>
+            </tr>
+            <tr>
+              <td>Attachment</td>
+              <td>Viral proteins bind to host cell receptors</td>
+              <td>Controls host range and tissue tropism</td>
+            </tr>
+            <tr>
+              <td>Replication</td>
+              <td>Viral genome is copied and viral proteins are produced</td>
+              <td>Drives viral load and infection severity</td>
+            </tr>
+            <tr>
+              <td>Release</td>
+              <td>New virus particles exit the infected cell</td>
+              <td>Causes tissue damage and enables spread</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="image-caption">
+          Summary of the main stages of viral infection and their biological significance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Spread Through the Body</h2>
+    <div class="collapsible-content open">
+      <p>
+        Some infections stay local like in the upper respiratory tract. Others spread more widely through the
+        bloodstream or lymphatic system, reaching multiple organs. This is one reason why different viruses cause very
+        different symptoms and levels of severity.
+        <a href="references.html#ref-21" class="citation">[21]</a>
+      </p>
+
+      <h3 class="collapsible-title open">🌡️ Symptoms and Tissue Damage</h3>
+      <div class="collapsible-content open">
+        <p>
+          Symptoms can be caused by direct cell damage from viral replication, but they can also be caused by the immune
+          response (inflammation or fever). In some diseases, immune-driven damage can be a major
+          part of severe illness.
+          <a href="references.html#ref-22" class="citation">[22]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🛡️ Immune Response and Control</h3>
+      <div class="collapsible-content open">
+        <p>
+          The innate immune system responds quickly using interferons and inflammatory signals to slow viral replication.
+          The adaptive immune system follows with antibodies and T cells that can clear infected cells and build long-term
+          protection.
+          <a href="references.html#ref-23" class="citation">[23]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Immune Evasion</h2>
+    <div class="collapsible-content open">
+      <p>
+        Viruses have evolved strategies to avoid being eliminated. Some interfere with interferon signaling, some hide
+        inside cells, and others change their surface proteins over time. These strategies can make infections harder
+        to control and can influence reinfection risk.
+        <a href="references.html#ref-24" class="citation">[24]</a>
+      </p>
+
+      <h3 class="collapsible-title open">🎭 Why Immune Evasion Matters</h3>
+      <div class="collapsible-content open">
+        <p>
+          If a virus evades immune detection, it may replicate longer, spread more efficiently, or cause more severe
+          disease. Immune evasion is also one reason why vaccines may need updates or boosters for some viruses.
+          <a href="references.html#ref-24" class="citation">[24]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Common Misconceptions</h2>
+    <div class="collapsible-content open">
+      <h3 class="collapsible-title open">Myth: “If you’re infected, you will always get sick.”</h3>
+      <div class="collapsible-content open">
+        <p>
+          Not always. Some infections are asymptomatic, meaning the virus replicates but causes few or no noticeable
+          symptoms. Severity depends on viral factors (dose, variant, tropism) and host factors (immune status, age,
+          underlying conditions).
+          <a href="references.html#ref-25" class="citation">[25]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">Why do symptoms sometimes appear days after infection?</h3>
+      <div class="collapsible-content open">
+        <p>
+          Many viruses have an incubation period. During this time the virus is replicating and spreading before symptoms
+          become strong enough to notice. Symptoms often increase as viral load rises and as the immune response ramps up.
+          <a href="references.html#ref-26" class="citation">[26]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+    <footer class="footer">
+      <p>Modern Virology Project</p>
+      <p class="footer-sub">Exploring viruses through data, biology, and research</p>
+  </footer>
+  <script src="../js/script.js"></script>
 </body>
 </html>

@@ -1,27 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Dashboard</title>
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Data Dashboard</title>
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
-<body>
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="basics.html">Basics</a>
-        <a href="dashboard.html">Global Data</a>
-        <a href="vaccines.html">Vaccines</a>
-        <a href="infection.html">Infection</a>
-        <a href="research.html">Research</a>
-        <a href="references.html">References</a>
-    </nav>
-    <main>
-        <section class="hero">     
-            <h1>Global Dashboard</h1>
-            <p>Placeholder</p>
-        </section>       
-    </main>
 
+<body>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="basics.html">Basics</a>
+    <a href="dashboard.html" class="active">Global Data</a>
+    <a href="vaccines.html">Vaccines</a>
+    <a href="infection.html">Infection</a>
+    <a href="research.html">Research</a>
+    <a href="references.html">References</a>
+  </nav>
+
+  <main>
+    <header class="page-hero">
+      <h1>Global Data Dashboard</h1>
+      <p class="hero-subtitle">
+        This page explores real-world virus data across regions, age groups, and time to show how patterns of infection and severity change.
+      </p>
+    </header>
+
+        <div class="section-card">
+      <h2>Key Takeaways</h2>
+      <ul class="styled-list">
+        <li>Virus impact varies significantly by region due to population density, healthcare access, and public health responses</li>
+        <li>Per-capita data (e.g., cases per million) provides more accurate comparisons than total case counts</li>
+        <li>Age groups experience different risks: younger populations often have higher exposure, while older groups face greater severity</li>
+        <li>Timeline data reveals waves, seasonal patterns, and the effects of interventions like vaccination</li>
+        <li>Data interpretation requires caution due to differences in testing, reporting, and surveillance across regions</li>
+      </ul>
+    </div>
+
+    <section class="section-card">
+      <h2 class="collapsible-title open">Why Global Data Matters</h2>
+      <div class="collapsible-content open">
+        <p>
+          Virus outbreaks do not affect every population in the same way. Infection rates, hospitalization, and death rates can vary by
+          region, age group, vaccination level, public health response, and access to healthcare. Looking at global data helps us compare
+          trends and understand where viruses have the greatest impact.
+          <a href="references.html#ref-32" class="citation">[32]</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2 class="collapsible-title open">Virus Prevalence by Region</h2>
+      <div class="collapsible-content open">
+        <p>
+          Some viruses spread more widely in certain parts of the world because of climate, travel patterns, population density,
+          healthcare access, or seasonal effects. Regional data can reveal where transmission is highest and where public health
+          resources may be most needed.
+          <a href="references.html#ref-33" class="citation">[33]</a>
+        </p>
+
+        <h3 class="collapsible-title open">🌍 Comparing Regions</h3>
+        <div class="collapsible-content open">
+          <p>
+            This dashboard section can show infection prevalence across continents or countries using charts, maps, or ranked bar graphs.
+            For example, one graph could compare reported cases per 100,000 people across regions during the same time period.
+          </p>
+
+          <div class="chart-box">
+            <div class="chart-controls">
+              <label for="regionMetric">Choose regional metric:</label>
+              <select id="regionMetric">
+                <option value="total_cases_per_million">Total cases per million</option>
+                <option value="total_deaths_per_million">Total deaths per million</option>
+              </select>
+            </div>
+
+            <canvas id="regionChart"></canvas>
+
+            <p class="image-caption">
+              Interactive chart using simplified comparison data. Values compare broad regions using per-million metrics.
+            </p>
+          </div>
+
+          <figure class="figure">
+            <img
+              src="../images/regional-virus-map.jpg"
+              alt="World map showing regional virus prevalence"
+              class="classification-image"
+            >
+            <figcaption class="image-caption">
+              Source: Global, regional, and national burden of HIV and other sexually transmitted infections in older adults aged 60–89 years from 1990 to 2019: results from the Global Burden of Disease Study 2019, The Lancet
+            </figcaption>
+          </figure>
+        </div>
+
+        <h3 class="collapsible-title open">Regional Comparison Table</h3>
+        <div class="collapsible-content open">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Region</th>
+                <th>Example Trend</th>
+                <th>Possible Influences</th>
+                <th>Why It Matters</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>North America</td>
+                <td>High seasonal waves in respiratory viruses</td>
+                <td>Travel, indoor winter spread, urban density</td>
+                <td>Helps predict healthcare demand</td>
+              </tr>
+              <tr>
+                <td>Europe</td>
+                <td>Strong winter transmission patterns</td>
+                <td>Climate, mobility, aging populations</td>
+                <td>Useful for comparing policy responses</td>
+              </tr>
+              <tr>
+                <td>Africa</td>
+                <td>Surveillance may be uneven across regions</td>
+                <td>Testing access, reporting capacity</td>
+                <td>Shows limits of available datasets</td>
+              </tr>
+              <tr>
+                <td>Asia</td>
+                <td>Large differences between countries</td>
+                <td>Population size, density, public health systems</td>
+                <td>Reveals how context changes spread</td>
+              </tr>
+              <tr>
+                <td>South America</td>
+                <td>Periodic regional surges</td>
+                <td>Seasonality, mobility, healthcare strain</td>
+                <td>Highlights outbreak timing differences</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="image-caption">
+            Regional comparisons can help explain why virus burden is not evenly distributed around the world.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2 class="collapsible-title open">Age-Group Comparisons</h2>
+      <div class="collapsible-content open">
+        <p>
+          Age is one of the most important factors affecting viral risk. Some age groups are infected more often because of school,
+          work, or social contact, while other groups may face more severe outcomes because of weaker immune responses or underlying conditions.
+          <a href="references.html#ref-34" class="citation">[34]</a>
+        </p>
+
+        <h3 class="collapsible-title open">👶 Infection Rates by Age</h3>
+        <div class="collapsible-content open">
+          <p>
+            Younger age groups may experience high exposure rates because of close contact in schools and households. However,
+            high infection rates do not always mean the highest severity.
+            <a href="references.html#ref-34" class="citation">[34]</a>
+          </p>
+        </div>
+
+        <h3 class="collapsible-title open">🧓 Severity by Age</h3>
+        <div class="collapsible-content open">
+          <p>
+            Older adults are often at greater risk of severe disease, hospitalization, and death, especially for respiratory viruses.
+            This means dashboards should compare not only how many people are infected, but also how serious outcomes differ by age.
+            <a href="references.html#ref-35" class="citation">[35]</a>
+          </p>
+
+          <div class="chart-box">
+            <div class="chart-controls">
+              <label for="ageMetric">Choose age metric:</label>
+              <select id="ageMetric">
+                <option value="hospitalization">COVID hospitalization rate</option>
+                <option value="severity">Severity comparison</option>
+              </select>
+            </div>
+
+            <canvas id="ageChart"></canvas>
+
+            <p class="image-caption">
+              Interactive age-group chart. Values are simplified for comparison and should be interpreted as relative patterns, not exact rates.
+            </p>
+          </div>
+
+          <figure class="figure">
+            <img
+              src="../images/age-group-chart.webp"
+              alt="Chart comparing infection rates and severity by age group"
+              class="classification-image"
+            >
+            <figcaption class="image-caption">
+              Source: Virology Journal, ResearchGate
+            </figcaption>
+          </figure>
+        </div>
+
+        <h3 class="collapsible-title open">Age-Group Risk Table</h3>
+        <div class="collapsible-content open">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Age Group</th>
+                <th>Typical Exposure Risk</th>
+                <th>Typical Severity Risk</th>
+                <th>Main Reason</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0–17</td>
+                <td>Moderate to high</td>
+                <td>Usually lower</td>
+                <td>Frequent close contact, but often milder illness</td>
+              </tr>
+              <tr>
+                <td>18–49</td>
+                <td>High</td>
+                <td>Usually moderate</td>
+                <td>Work, travel, and social mixing increase exposure</td>
+              </tr>
+              <tr>
+                <td>50–64</td>
+                <td>Moderate</td>
+                <td>Higher</td>
+                <td>Risk rises with age and chronic health conditions</td>
+              </tr>
+              <tr>
+                <td>65+</td>
+                <td>Moderate</td>
+                <td>Highest</td>
+                <td>Immune decline and greater vulnerability to complications</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="image-caption">
+            Age-group dashboards are useful because infection frequency and severity are not the same thing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2 class="collapsible-title open">Timeline Graphs and Changes Over Time</h2>
+      <div class="collapsible-content open">
+        <p>
+          Timeline graphs show how outbreaks rise and fall. These visualizations help scientists and the public identify waves,
+          seasonal patterns, sudden surges, and long-term declines. They can also show how interventions such as vaccination,
+          masking, or public health restrictions influence transmission.
+          <a href="references.html#ref-36" class="citation">[36]</a>
+        </p>
+
+        <h3 class="collapsible-title open">📈 Tracking Waves</h3>
+        <div class="collapsible-content open">
+          <p>
+            A timeline graph can show reported cases, hospitalizations, or deaths across weeks, months, or years. This makes it easier
+            to spot when a virus is spreading rapidly and when transmission slows down.
+            <a href="references.html#ref-36" class="citation">[36]</a>
+          </p>
+        </div>
+
+        <h3 class="collapsible-title open">🕒 Comparing Multiple Variables Over Time</h3>
+        <div class="collapsible-content open">
+          <p>
+            More advanced dashboards can compare several trends at once, such as infection rates, vaccination coverage, and severe outcomes.
+            This helps show that the number of cases alone does not tell the full story.
+            <a href="references.html#ref-37" class="citation">[37]</a>
+          </p>
+
+          <div class="chart-box">
+            <div class="chart-controls">
+              <label for="timelineLocation">Choose country/region:</label>
+              <select id="timelineLocation">
+                <option value="Canada">Canada</option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Japan">Japan</option>
+                <option value="World">World</option>
+              </select>
+
+              <label for="timelineMetric">Choose timeline metric:</label>
+              <select id="timelineMetric">
+                <option value="new_cases_smoothed_per_million">New cases per million</option>
+                <option value="new_deaths_smoothed_per_million">New deaths per million</option>
+              </select>
+            </div>
+
+            <canvas id="timelineChart"></canvas>
+
+            <p class="image-caption">
+              Interactive timeline chart using simplified comparison data. Use the dropdowns to compare countries and metrics over time.
+            </p>
+          </div>
+
+          <figure class="figure">
+            <img
+              src="../images/timeline-graph.webp"
+              alt="Timeline graph showing virus-related trends over time"
+              class="classification-image"
+            >
+            <figcaption class="image-caption">
+              Source: Applied and Environmental Microbiology, ResearchGate
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2 class="collapsible-title open">How to Read a Dashboard Like a Scientist</h2>
+      <div class="collapsible-content open">
+        <h3 class="collapsible-title open">🔍 Look at the Units</h3>
+        <div class="collapsible-content open">
+          <p>
+            Always check whether the graph shows total cases, cases per 100,000 people, hospitalization rate, or death rate.
+            Raw totals can be misleading when populations are very different sizes.
+          </p>
+        </div>
+
+        <h3 class="collapsible-title open">⚖️ Compare Infection and Severity Separately</h3>
+        <div class="collapsible-content open">
+          <p>
+            A group with many infections may not have the highest severe outcomes. Scientists separate these measures so that public
+            health decisions are based on both spread and impact.
+            <a href="references.html#ref-38" class="citation">[38]</a>
+          </p>
+        </div>
+
+        <h3 class="collapsible-title open">📉 Watch for Missing or Uneven Data</h3>
+        <div class="collapsible-content open">
+          <p>
+            Not all countries or regions collect data in the same way. Differences in testing, reporting, and surveillance can make
+            one area appear safer or riskier than it really is.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2 class="collapsible-title open">Common Misconceptions</h2>
+      <div class="collapsible-content open">
+        <h3 class="collapsible-title open">Myth: “The region with the most total cases is always the worst affected.”</h3>
+        <div class="collapsible-content open">
+          <p>
+            Not necessarily. Larger populations often report more total cases. Per-capita rates can give a more accurate comparison
+            of how widespread infection really is.
+          </p>
+        </div>
+
+        <h3 class="collapsible-title open">Myth: “If a younger group has more infections, it must also have the most severe disease.”</h3>
+        <div class="collapsible-content open">
+          <p>
+            That is not always true. Exposure and severity measure different things. Some groups may be infected more often while
+            others are more likely to be hospitalized or die from the same virus.
+          </p>
+        </div>
+
+        <h3 class="collapsible-title open">Myth: “A timeline graph only shows the past.”</h3>
+        <div class="collapsible-content open">
+          <p>
+            Timeline graphs do show past data, but they also help researchers identify patterns that can improve forecasting and preparedness.
+            <a href="references.html#ref-39" class="citation">[39]</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+      <p>Modern Virology Project</p>
+      <p class="footer-sub">Exploring viruses through data, biology, and research</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>

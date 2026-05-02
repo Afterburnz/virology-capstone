@@ -4,24 +4,260 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virology Basics</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <nav>
         <a href="../index.html">Home</a>
-        <a href="basics.html">Basics</a>
+        <a href="basics.html" class="active">Basics</a>
         <a href="dashboard.html">Global Data</a>
         <a href="vaccines.html">Vaccines</a>
         <a href="infection.html">Infection</a>
         <a href="research.html">Research</a>
         <a href="references.html">References</a>
     </nav>
-    <main>
-        <section class="hero">     
-            <h1>Virology Basics</h1>
-            <p>This page introduces the fundamentals of modern virology.</p>
-        </section>       
-    </main>
+<main>
+  <header class="page-hero">
+    <h1>Virology Basics</h1>
+    <p class="hero-subtitle">
+      This page introduces the fundamental concepts of modern virology.
+    </p>
+  </header>
 
+    <div class="section-card">
+    <h2>Key Takeaways</h2>
+    <ul class="styled-list">
+      <li>Viruses are not living organisms and must infect host cells to reproduce</li>
+      <li>All viruses contain genetic material (DNA or RNA) inside a protective capsid</li>
+      <li>RNA viruses mutate faster than DNA viruses, allowing quicker adaptation</li>
+      <li>Enveloped viruses are less stable outside the body, while non-enveloped viruses are more resistant</li>
+      <li>Understanding viral structure and classification helps scientists predict transmission, mutation, and treatment strategies</li>
+    </ul>
+  </div>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">What is a Virus?</h2>
+    <div class="collapsible-content open">
+      <p>
+        A virus is a microscopic infectious agent that is unable to reproduce
+        independently. Instead, it must infect a living host cell and use the
+        host’s machinery to replicate. <a href="references.html#ref-1" class="citation">[1]</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Virus Structure</h2>
+    <div class="collapsible-content open">
+      <p>
+        Most viruses consist of genetic material, either DNA or RNA, enclosed
+        within a protein coat known as a capsid. In some viruses, this structure
+        is further surrounded by a lipid envelope derived from the host cell.
+        <a href="references.html#ref-1" class="citation">[1]</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">How Viruses Differ from Bacteria</h2>
+    <div class="collapsible-content open">
+      <p>
+        Unlike bacteria, viruses are not living cells. They lack the ability to
+        carry out metabolism and cannot reproduce independently, requiring a
+        host cell for replication.<a href="references.html#ref-2" class="citation">[2]</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">Classification Overview</h2>
+    <div class="collapsible-content open">
+      <p>
+        Viruses are classified based on their genetic material and structural
+        characteristics. These classifications help scientists understand viral
+        replication, transmission, and susceptibility to treatments.
+        <a href="references.html#ref-3" class="citation">[3]</a>
+      </p>
+
+      <figure class="figure">
+        <img
+          src="../images/virus-classification.png"
+          alt="Diagram comparing DNA and RNA viruses and enveloped versus non-enveloped viruses"
+          class="classification-image"
+        >
+        <figcaption class="image-caption">
+          Source: <em>Viruses – Overview</em>, Draw It to Know It.
+        </figcaption>
+      </figure>
+
+      <h3 class="collapsible-title open">🧬 DNA vs RNA Viruses</h3>
+      <div class="collapsible-content open">
+        <p>
+          DNA viruses generally replicate with higher accuracy and mutate more
+          slowly, often relying on the host cell nucleus. In contrast, RNA viruses
+          typically replicate more rapidly and exhibit higher mutation rates,
+          allowing for faster adaptation. <a href="references.html#ref-4" class="citation">[4]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">Comparison of DNA and RNA Viruses</h3>
+      <div class="collapsible-content open">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>DNA Viruses</th>
+              <th>RNA Viruses</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Genetic Material</td>
+              <td>DNA</td>
+              <td>RNA</td>
+            </tr>
+            <tr>
+              <td>Mutation Rate</td>
+              <td>Generally lower</td>
+              <td>Generally higher</td>
+            </tr>
+            <tr>
+              <td>Replication Accuracy</td>
+              <td>Higher</td>
+              <td>Lower</td>
+            </tr>
+            <tr>
+              <td>Replication Location</td>
+              <td>Usually in the host nucleus</td>
+              <td>Usually in the host cytoplasm</td>
+            </tr>
+            <tr>
+              <td>Genome Stability</td>
+              <td>More stable</td>
+              <td>Less stable</td>
+            </tr>
+            <tr>
+              <td>Examples</td>
+              <td>Herpesviruses, Adenoviruses</td>
+              <td>Influenza virus, SARS-CoV-2</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="image-caption">
+          Comparison adapted from standard virology texts. <a href="references.html#ref-5">[5]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🦠 Enveloped vs Non-Enveloped Viruses</h3>
+      <div class="collapsible-content open">
+        <p>
+          Enveloped viruses possess a lipid membrane that aids in host cell entry
+          but makes them more susceptible to environmental conditions. Non-enveloped
+          viruses lack this membrane and are generally more resistant to heat,
+          disinfectants, and dehydration. <a href="references.html#ref-3" class="citation">[3]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">Comparison of Enveloped and Non-Enveloped Viruses</h3>
+      <div class="collapsible-content open">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Enveloped Viruses</th>
+              <th>Non-Enveloped Viruses</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Outer Structure</td>
+              <td>Lipid envelope surrounding the capsid</td>
+              <td>Protein capsid only (no envelope)</td>
+            </tr>
+            <tr>
+              <td>Environmental Stability</td>
+              <td>Less stable outside the host</td>
+              <td>More stable outside the host</td>
+            </tr>
+            <tr>
+              <td>Sensitivity to Disinfectants</td>
+              <td>Highly sensitive to detergents and alcohol</td>
+              <td>More resistant to disinfectants</td>
+            </tr>
+            <tr>
+              <td>Transmission</td>
+              <td>Often spread via close contact, fluids, or droplets</td>
+              <td>Often spread via surfaces, food, or water</td>
+            </tr>
+            <tr>
+              <td>Survival Outside Host</td>
+              <td>Shorter survival time</td>
+              <td>Longer survival time</td>
+            </tr>
+            <tr>
+              <td>Examples</td>
+              <td>Influenza virus, HIV, SARS-CoV-2</td>
+              <td>Norovirus, Adenovirus, Poliovirus</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="image-caption">
+          Comparison adapted from standard virology references.
+          <a href="references.html#ref-3">[3]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card">
+    <h2 class="collapsible-title open">🔬 Why Modern Virology Matters</h2>
+    <div class="collapsible-content open">
+      <p>
+        Modern virology focuses on understanding how viruses evolve, spread, and
+        interact with hosts in an increasingly interconnected world. Advances in
+        this field are essential for public health and disease prevention.
+        <a href="references.html#ref-5" class="citation">[5]</a>
+      </p>
+
+      <h3 class="collapsible-title open">⚠️ Variants and Mutation</h3>
+      <div class="collapsible-content open">
+        <p>
+          Many viruses, particularly RNA viruses, undergo frequent mutations during
+          replication. These genetic changes can lead to the emergence of variants
+          with differing transmissibility, severity, or resistance to immune responses.
+          <a href="references.html#ref-4" class="citation">[4]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">🦝 Zoonotic Spillover</h3>
+      <div class="collapsible-content open">
+        <p>
+          Zoonotic spillover occurs when a virus is transmitted from an animal host
+          to humans. Increased global travel, environmental disruption, and human
+          contact with wildlife have heightened the risk of such events.
+          <a href="references.html#ref-6" class="citation">[6]</a>
+        </p>
+      </div>
+
+      <h3 class="collapsible-title open">💉 Vaccines and Antivirals</h3>
+      <div class="collapsible-content open">
+        <p>
+          Advances in virology have enabled the rapid development of vaccines and
+          targeted antiviral therapies. These interventions play a critical role in
+          controlling viral outbreaks and reducing disease severity.
+          <a href="references.html#ref-7" class="citation">[7]</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+  <footer class="footer">
+      <p>Modern Virology Project</p>
+      <p class="footer-sub">Exploring viruses through data, biology, and research</p>
+  </footer>
+  <script src="../js/script.js"></script>
 </body>
 </html>
